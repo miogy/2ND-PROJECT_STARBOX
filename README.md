@@ -30,5 +30,6 @@
 - [아이디찾기] fetch를 이용하여 POST로 user정보를 보내서 DB에서 비교후 아이디 받기
 - [비밀번호찾기] 아이디 찾기와 같은 내용
 
+## [담당기능 시연영상](https://youtu.be/WFLoaP3cGkg)
 
 
