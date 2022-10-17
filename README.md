@@ -30,6 +30,48 @@
 - [아이디찾기] fetch를 이용하여 POST로 user정보를 보내서 DB에서 비교후 아이디 받기
 - [비밀번호찾기] 아이디 찾기와 같은 내용
 
-## [담당기능 시연영상](https://youtu.be/WFLoaP3cGkg)
+## [시연영상 전체보기](https://youtu.be/WFLoaP3cGkg)
 
+## 기능별 영상보기
+
+### UI
+
+[!](https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4)
+
+### Login
+
+fetch함수를 이용하여 POST메서드로 DB에 보내어 user의 정보를 확인후 token을 보내준다.
+
+[!](https://user-images.githubusercontent.com/99234582/196129020-3036c6bf-9272-4f70-beee-6fde11cc0b1c.mp4)
+
+### Sign up
+
+#### step.01 : 휴대폰 인증하기
+
+fetch함수를 이용하여 api를 호출하고 POST로 user의 정보를 보낸다.
+번호를 보내면 인증번호를 입력하여 DB로 다시 보낼 toggle을 생성한다.
+문자로 받은 인증번호를 담아놓은 user의 휴대폰 번호와 같이 보내준다.
+
+[!](https://user-images.githubusercontent.com/99234582/196132040-c2019575-20fd-40c3-a423-99737cb4cb95.mp4)
+
+#### step.02 : 약관 동의
+
+전체 선택하면 아래 체크박스들이 전체 선택이 되며 아래 체크박스 중 하나를 해제하면 전체 선택이 해제 된다.
+
+[!](https://user-images.githubusercontent.com/99234582/196134181-fc848814-cc87-4dfb-8c40-c3bab8f11fad.mp4)
+
+#### step.03 : 정보 입력
+
+앞에 step.01에서 입력한 user의 정보를 담고 step.03에서 다시 불러온다.
+아이디를 DB에 보내어 user데이터에서 확인후 중복체크를 해준다.
+비밀번호와 이메일을 입력시 유효성 검사를 하고 문제가 없을 시 아래 체크박스중 하나를 선택해야 가입이 완료된다.
+가입완료 버튼을 클릭하면 메인페이지로 이동한다.
+
+[!](https://user-images.githubusercontent.com/99234582/196135319-8d243855-88f8-4304-98de-a4ff29592f6b.mp4)
+
+### User-find 
+
+fetch함수를 이용하여 POST메서드로 user의 정보를 보내고 DB에서 확인후 아이디를 보내주거나 임시 비밀번호를 생성하여 user에게 보내준다.
+
+[!](https://user-images.githubusercontent.com/99234582/196136005-61c8834b-b045-4915-8bad-77875ba85255.mp4)
 
