@@ -30,7 +30,7 @@
 - [아이디찾기] fetch를 이용하여 POST로 user정보를 보내서 DB에서 비교후 아이디 받기
 - [비밀번호찾기] 아이디 찾기와 같은 내용
 
-## [시연영상 전체보기](https://youtu.be/WFLoaP3cGkg)
+## [!](https://user-images.githubusercontent.com/99234582/196137091-a6c63d61-c91f-4e6d-a4d9-ecd1097736e6.png)](https://youtu.be/WFLoaP3cGkg)
 
 ## 기능별 영상보기
 
