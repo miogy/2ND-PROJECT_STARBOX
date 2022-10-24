@@ -50,7 +50,7 @@
 
 ### Login
 
-fetch함수를 이용하여 POST메서드로 DB에 보내어 user의 정보를 확인후 token을 보내준다.
+fetch함수를 이용하여 POST메서드로 DB에 보내어 user의 정보를 확인후 token을 저장한다. 로그아웃시 token을 지운다.
 
 [!](https://user-images.githubusercontent.com/99234582/196129020-3036c6bf-9272-4f70-beee-6fde11cc0b1c.mp4)
 
