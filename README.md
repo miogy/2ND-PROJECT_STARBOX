@@ -1,21 +1,33 @@
-# STARBOX
+# < STARBOX >  
+<br>
 
-## 프로젝트 소개
+## 1. 시영영상 전체보기
+
+[![home](https://user-images.githubusercontent.com/99234582/196137091-a6c63d61-c91f-4e6d-a4d9-ecd1097736e6.png)](https://youtu.be/WFLoaP3cGkg)
+
+<br>
+
+## 2. 프로젝트 소개
+
+### 1) 프로젝트 선정
 - 이전 프로젝트였던 E-commerce에서 좀더 다양한 기능을 접할수 있는 사이트를 고려하던 중 기본 CRUD는 물론 새로운 기능과 UI를 접할 수 있는 MEGABOX를 선정하게 되었습니다.
 - fetch함수를 이용하여 api로 연결하여 데이터를 받아오고 UI부분도 스스로 sass를 이용하여 구현하였습니다.
 
-## 개발 기간 및 인원
+### 2) 개발 기간 및 인원
 
 - 개발 기간 : 2022/09/19~2022/09/30
 - 개발 인원 : BE 2명 / FE 4명
 
-## 적용 기술
+### 3) 적용 기술
 
 - React js, sass, styled-component
 - Community Tools : [Trello](https://trello.com/b/vHTBevR2/project-management), [Notion](https://www.notion.so/wecode/2nd-Project-04bc92fc5d2b4c53bd065749118f826f?p=c09094a986d44c4b9ab702b4bd1b3fd6&pm=c), Zep, Zoom, Slack
 - Version Control Tool : Git
 
-## 담당기능
+<br>
+
+
+## 3. 담당기능
 
 - [UI] Header: Nav bar 레이아웃 및 UI 스타일 구현, 로고, Subnav bar Tab구현, 로그인 pop-up 모달 구현, 
 </br> 회원가입 컴포넌트 별 레이아웃 및 스타일 구현, 아이디/비밀번호 찾기 레이아웃 및 스타일 구현, user의 이동경로에 따른 UI구현
@@ -34,54 +46,89 @@
 <hr>
 <br>
 
-## 시영영상 전체보기
-
-[![home](https://user-images.githubusercontent.com/99234582/196137091-a6c63d61-c91f-4e6d-a4d9-ecd1097736e6.png)](https://youtu.be/WFLoaP3cGkg)
-
-<br>
-<hr>
-<br>
-
 ## 기능별 영상보기
+
+<br>
 
 ### UI
 
 [!](https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4)
 
+<br>
+[Header] : Main & Page별 UI구현, <br>
+[Hover] : hover시 Nav bar 메뉴 구현, <br>
+[Page Nav bar] : hover시 메뉴구현, page이동시 location 구현 <br>
+[Tab] : nav bar 탭메뉴 클릭시 submenu Drop-down, mock-up데이터 이용 메뉴 구현, <br>
+[Login] : pop-up (Modal) login 레이아웃, 스타일 <br>
+[Sign up] : step별 레이아웃 및 스타일 
+
+<br>
+<hr>
+<br>
+
+
 ### Login
 
-fetch함수를 이용하여 POST메서드로 DB에 보내어 user의 정보를 확인후 token을 저장한다. 로그아웃시 token을 지운다.
+
 
 [!](https://user-images.githubusercontent.com/99234582/196129020-3036c6bf-9272-4f70-beee-6fde11cc0b1c.mp4)
+
+<br>
+
+fetch함수를 이용하여 POST메서드로 아이디와 비밀번호를 DB에 보내어 user의 정보를 확인후 localstorage를 이용하여 token을 저장한다. <br>
+로그아웃시 token을 지운다.
+
+<br>
+<hr>
+<br>
 
 ### Sign up
 
 #### step.01 : 휴대폰 인증하기
 
-fetch함수를 이용하여 api를 호출하고 POST로 user의 정보를 보낸다.
-번호를 보내면 인증번호를 입력하여 DB로 다시 보낼 toggle을 생성한다.
-문자로 받은 인증번호를 담아놓은 user의 휴대폰 번호와 같이 보내준다.
 
 [!](https://user-images.githubusercontent.com/99234582/196132040-c2019575-20fd-40c3-a423-99737cb4cb95.mp4)
 
-#### step.02 : 약관 동의
+<br>
 
-전체 선택하면 아래 체크박스들이 전체 선택이 되며 아래 체크박스 중 하나를 해제하면 전체 선택이 해제 된다.
+fetch함수를 이용하여 api를 호출하고 POST로 user의 정보를 보낸다. <br>
+번호를 보내면 인증번호를 입력하여 DB로 다시 보낼 toggle을 생성한다. <br>
+문자로 받은 인증번호를 담아놓은 user의 휴대폰 번호와 같이 보내준다. <br>
+
+<br>
+
+#### step.02 : 약관 동의
 
 [!](https://user-images.githubusercontent.com/99234582/196134181-fc848814-cc87-4dfb-8c40-c3bab8f11fad.mp4)
 
-#### step.03 : 정보 입력
+<br>
 
-앞에 step.01에서 입력한 user의 정보를 담고 step.03에서 다시 불러온다.
-아이디를 DB에 보내어 user데이터에서 확인후 중복체크를 해준다.
-비밀번호와 이메일을 입력시 유효성 검사를 하고 문제가 없을 시 아래 체크박스중 하나를 선택해야 가입이 완료된다.
-가입완료 버튼을 클릭하면 메인페이지로 이동한다.
+전체 선택하면 아래 체크박스들이 전체 선택이 되며 아래 체크박스 중 하나를 해제하면 전체 선택이 해제 된다.
+
+<br>
+
+#### step.03 : 정보 입력
 
 [!](https://user-images.githubusercontent.com/99234582/196135319-8d243855-88f8-4304-98de-a4ff29592f6b.mp4)
 
-### User-find 
+<br>
 
-fetch함수를 이용하여 POST메서드로 user의 정보를 보내고 DB에서 확인후 아이디를 보내주거나 임시 비밀번호를 생성하여 user에게 보내준다.
+앞에 step.01에서 입력한 user의 정보를 담고 step.03에서 다시 불러온다. <br>
+아이디를 DB에 보내어 user데이터에서 확인후 중복체크를 해준다. <br>
+비밀번호와 이메일을 입력시 유효성 검사를 하고 문제가 없을 시 아래 체크박스중 하나를 선택해야 가입이 완료된다. <br>
+가입완료 버튼을 클릭하면 메인페이지로 이동한다. <br>
+
+<br>
+
+### User-find 
 
 [!](https://user-images.githubusercontent.com/99234582/196136005-61c8834b-b045-4915-8bad-77875ba85255.mp4)
 
+<br>
+
+fetch함수를 이용하여 POST메서드로 user의 정보를 보내고 DB에서 확인후 해당 유저의 아이디를 보내주거나 임시 비밀번호를 생성하여 user에게 보내준다.
+
+<br>
+
+
+# < / STARBOX >
